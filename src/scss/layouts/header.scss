@@ -1,0 +1,48 @@
+@use "../abstracts/variables" as *;
+.header {
+  padding: 10px 20px;
+}
+
+.header__social {
+  display: flex;
+  gap: 20px; 
+}
+
+.header__social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.header__social a:hover {
+  transform: scale(1.1);
+}
+
+.header__social .icon {
+  fill:$black;       
+  transition: fill 0.3s ease;
+}
+
+.header__social a:hover .icon {
+  fill:blue;
+}
+.header__logo_link{
+  display: flex;
+flex-direction: row;
+}
+.header__logo_img{
+ width: 32px;
+ height: 32px;
+ background-color: $logo;
+ border-radius: 5px;
+}
+
+.header__logo_text{
+  color : $logo;
+  font-size: 30px;
+  font-weight: bold;
+  
+}

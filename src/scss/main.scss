@@ -1,0 +1,26 @@
+@use "base/reset" as *;
+@use "base/fonts" as *;
+@use "abstracts/variables" as *;
+@use "abstracts/mixins" as *;
+@use "layouts/header.scss" as *;
+
+body {
+  background-color: $white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  font-style: normal;
+  color: $black;
+}
+
+
+html, body { height: 100%; margin: 0; }
+body { display: flex; flex-direction: column; }
+main { flex: 1; } 
+footer { margin-top: auto; } 
+
+.container {
+  margin: 0 auto;
+  max-width: 392px;
+  padding: 0px 40px;
+}
