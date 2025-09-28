@@ -1,0 +1,20 @@
+@use "../abstracts/variables" as *;
+.button {
+  background-color: $logo;
+  color: $white;
+  max-width: 174px;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  display: block;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+  &:hover,
+  &:focus {
+    background-color: $hover_event;
+    color: $white;
+    transform: scale(1.03); 
+  }
+}

@@ -1,6 +1,7 @@
 @use "base/reset" as *;
 @use "base/fonts" as *;
 @use "abstracts/variables" as *;
+@use "components/buttons" as *;
 @use "abstracts/mixins" as *;
 @use "layouts/header.scss" as *;
 
@@ -23,4 +24,31 @@ footer { margin-top: auto; }
   margin: 0 auto;
   max-width: 392px;
   padding: 0px 40px;
+}
+
+.hero_section {
+  background-color: $hero_bg;
+}
+.hero__text_container {
+  padding: 281px 35px 454px 200px;
+}
+.hero__image{
+   position: absolute;
+   top: 326px;
+   left: 721px;
+  max-width: 766px;
+  max-height: 625px;
+}
+.hero__titel{
+  max-width: 486px;
+  font-size: 50px;
+  font-weight: 900;
+  padding-bottom: 31px;
+}
+
+.hero__text{
+  max-width: 640px;
+  font-size: 17px;
+  color: $text;
+  padding-bottom: 30px;
 }
